@@ -1,0 +1,14 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+api_post_display:
+    path:     /lucky/twig/display/{passvalue}
+    defaults: { _controller: AppBundle:LuckyTwig:display }
+    methods:  [GET, HEAD]
+
+api_display:
+    path:     /lucky/twig/default
+    defaults: { _controller: AppBundle:LuckyTwig:default }
+    methods:  [GET, HEAD]
+
